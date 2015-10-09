@@ -1,0 +1,24 @@
+{
+  "name": "TestDrivenSQL",
+  "version": "0.0.0",
+  "author": "Gabe Lyons & Vinh Tran",
+  "repository": "git@github.com:GabeLoins/TestDrivenSQL.git",
+  "engines": {
+    "node": "0.11.x",
+    "npm": "1.x.x"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "react": "^0.13.0-rc2"
+  },
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.0.1",
+    "exec-sync": "0.1.6",
+    "gulp": "^3.9.0",
+    "gulp-rename": "1.x.x",
+    "gulp-sass": "2.x.x",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.4.0"
+  }
+}
