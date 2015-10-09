@@ -9,4 +9,4 @@ This can be a time consuming and potentially error prone process. Moreover this 
 
 A second reason is that we believe that there is no existing way to easily test SQL queries and their subqueries. Thus our objective is to make it easier to write SQL queries that are well tested, and as a side effect are also more readable and reusable to streamline the verification step.
 
-See the extended design document (here)[https://docs.google.com/a/brown.edu/document/d/1SwvQI0xNGceb6pPAVCSY1QwPuD3PHWRqfcE--dezs24/edit?usp=sharing].
+See the extended design document [here](https://docs.google.com/a/brown.edu/document/d/1SwvQI0xNGceb6pPAVCSY1QwPuD3PHWRqfcE--dezs24/edit?usp=sharing).
