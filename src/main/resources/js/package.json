@@ -1,0 +1,10 @@
+{
+  "name": "TestDrivenSQL-FrontEnd",
+  "version": "0.0.0",
+  "author": "Gabe Lyons & Vinh Tran",
+  "repository": "git@github.com:GabeLoins/TestDrivenSQL.git",
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "react": "^0.13.0-rc2"
+  }
+}

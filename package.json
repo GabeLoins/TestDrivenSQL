@@ -8,8 +8,6 @@
     "npm": "1.x.x"
   },
   "dependencies": {
-    "jquery": "^2.1.4",
-    "react": "^0.13.0-rc2"
   },
   "devDependencies": {
     "babelify": "^6.3.0",
