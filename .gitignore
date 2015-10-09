@@ -1,5 +1,6 @@
 META-INF/
 target/
+node_modules/
 .project
 .classpath
 .settings/
