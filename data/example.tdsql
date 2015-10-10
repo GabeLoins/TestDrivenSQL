@@ -1,0 +1,21 @@
+[
+  {
+    type: Test.INPUT_EXPECTED_OUTPUT,
+    input: [
+      {
+        table: "Artist",
+        columns: ["ArtistId", "Name"],
+        rows: [
+          [1, "Grimes"]
+          [2, "King Krule"]
+        ]
+      }
+    ],
+    expectedOutput: {
+      columns: ["ArtistId", "Name", "COUNT(*)"],
+      rows: [
+        [1, "Grimes", 1]
+      ]
+    }
+  },
+]
