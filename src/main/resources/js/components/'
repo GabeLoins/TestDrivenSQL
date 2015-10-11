@@ -1,0 +1,46 @@
+import React from 'react';
+
+import TextPad from './TextPad';
+
+import PanelStore from '../stores/PanelStore';
+import TextPadStore from '../stores/TextPadStore';
+
+class TextPanel extends React.Component {
+
+  render() {
+    return (
+      <div className="text-panel">
+        {this.renderTextPads()}
+      </div>
+    );
+  }
+
+  renderTextPads() {
+    const ids = TextPadStore.getOrderedIds();
+    return ids.map(function (id) {
+      return (
+        <TextPad id={id} />
+      );
+    });
+  }
+
+  componentDidMount() {
+    PanelStore.listen(this.onChange);
+  }
+
+  componentWillUnmount() {
+    PanelStore.unlisten(this.onChange);
+  }
+
+  onChange(state) {
+    this.setState(state);
+  }
+
+  constructor(props) {
+    super(props);
+    this.onChange = this.onChange.bind(this);
+    this.state = PanelStore.getState();
+  }
+}
+
+export default TextPanel;

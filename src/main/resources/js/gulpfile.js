@@ -15,13 +15,18 @@ gulp.task('build', function () {
                   })
       .transform(babelify)
           .bundle()
-            .pipe(source('bundle.js'))
-              .pipe(chmod(755))
+            .on('error', onError)
+              .pipe(source('bundle.js'))
                 .pipe(gulp.dest('dist'));
 });
 
+function onError(err) {
+  console.log(err);
+  this.emit('end');
+}
+
 gulp.task('watch', ['build'], function () {
-  gulp.watch('./components/*.js', ['build']);
+  gulp.watch(['./components/*.js', './actions/*.js', './stores/*.js', './constants/*.js'], ['build']);
 });
  
 gulp.task('default', ['watch']);

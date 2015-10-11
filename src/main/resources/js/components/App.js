@@ -1,13 +1,16 @@
 import React from 'react';
 
+import FilePanel from './FilePanel';
+import Editor from './Editor';
 
 class App extends React.Component {
 
   render() {
     return (
-      <p>
-        Hello World!
-      </p>
+      <div>
+        <FilePanel />
+        <Editor />
+      </div>
     );
   }
 
