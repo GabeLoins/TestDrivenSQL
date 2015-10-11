@@ -45,6 +45,12 @@
     </dependency>
 
     <dependency>
+      <groupId>com.googlecode.json-simple</groupId>
+      <artifactId>json-simple</artifactId>
+      <version>1.1.1</version>
+    </dependency>
+
+    <dependency>
       <groupId>com.sparkjava</groupId>
       <artifactId>spark-core</artifactId>
       <version>2.0.0</version>
@@ -62,7 +68,7 @@
       <version>3.8.7</version>
     </dependency>
   </dependencies>
- 
+
   <build>
     <plugins>
       <plugin>

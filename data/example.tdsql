@@ -1,6 +1,7 @@
 [
   {
     type: Test.INPUT_EXPECTED_OUTPUT,
+    desc: "Example test case using example tables.",
     input: [
       {
         table: 'Artist',
