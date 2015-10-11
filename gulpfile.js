@@ -3,7 +3,6 @@
 var babelify = require('babelify');
 var browserify = require('browserify');
 var child = require('child_process');
-var execSync = require('exec-sync')
 var gulp = require('gulp');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
@@ -12,7 +11,7 @@ var source = require('vinyl-source-stream');
 var server;
 
 gulp.task('package', function() {
-  console.log(execSync('mvn package'));
+  console.log(child.execSync('mvn package') + '');
 });
 
 gulp.task('run', ['package'], function() {
@@ -20,10 +19,11 @@ gulp.task('run', ['package'], function() {
     server.kill('SIGINT');
   }
 
-  var target = execSync('ls target/*.jar');
-  var deps = execSync('mvn dependency:build-classpath | grep -v INFO');
+  var target = child.execSync('ls target/*.jar') + '';
+  var deps =
+      child.execSync('mvn dependency:build-classpath | grep -v INFO') + '';
   server = child.spawn('java', [
-      '-cp', target + ':' + deps, 'tdsql.Main', '"$*"'
+      '-cp', target.trim() + ':' + deps.trim(), 'tdsql.Main', '"$*"'
   ]);
 
   server.stdout.on('data', function (data) {
