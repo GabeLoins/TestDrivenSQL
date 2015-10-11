@@ -1,0 +1,37 @@
+[
+  {
+    type: Test.INPUT_EXPECTED_OUTPUT,
+    input: [
+      {
+        table: 'Artist',
+        columns: ['ArtistId', 'Name']
+        rows: [
+          [1, 'Grimes'],
+          [2, 'King Krule'],
+          [3, 'Little Joy'],
+          [4, 'Local Natives'],
+          [5, 'Timber Timbre'],
+          [6, 'Earl Sweatshirt']
+        ]
+      },
+      {
+        table: 'Album',
+        columns: ['AlbumId', 'Title', 'ArtistId'],
+        rows: [
+          [1, 'Little Joy', 3],
+          [2, '6 Feet Beneath the Moon', 2],
+          [3, 'Gorilla Manor', 4],
+          [4, 'Doris', 6],
+          [5, 'Timber Timbre', 5]
+        ]
+      }
+    ],
+    expectedOutput: {
+      columns: ['Artist.ArtistId', 'Artist.Name'],
+      rows: [
+        [3, 'Little Joy'],
+        [5, 'Timber Timbre']
+      ]
+    }
+  }
+]
