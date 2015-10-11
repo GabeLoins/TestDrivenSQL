@@ -1,5 +1,8 @@
-package tdsql.framework;
+package tdsql.framework.exceptions;
 
+/**
+ * Exception thrown when a supposedly TestType value turns out to be invalid.
+ */
 public class TestTypeNotFoundException extends Exception {
 
   private static final long serialVersionUID = 432272783560258837L; 
