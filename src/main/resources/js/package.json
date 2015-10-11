@@ -1,24 +1,10 @@
 {
-  "name": "algos_site",
+  "name": "TestDrivenSQL-FrontEnd",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "author": "Gabe Lyons & Vinh Tran",
+  "repository": "git@github.com:GabeLoins/TestDrivenSQL.git",
   "dependencies": {
-    "alt": "^0.17.4",
-    "babelify": "^6.3.0",
-    "brace": "^0.5.1",
-    "browserify": "^11.0.1",
-    "gulp": "^3.9.0",
-    "gulp-chmod": "^1.2.0",
     "jquery": "^2.1.4",
-    "react": "^0.13.0-rc2",
-    "react-ace": "^2.5.0",
-    "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.4.0"
+    "react": "^0.13.0-rc2"
   }
 }
