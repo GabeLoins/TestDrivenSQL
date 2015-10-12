@@ -1,5 +1,8 @@
 package tdsql.framework;
 
+/**
+ * State about a test's result - what an executed TestCase will return.
+ */
 public class TestResult {
   private boolean pass;
 
