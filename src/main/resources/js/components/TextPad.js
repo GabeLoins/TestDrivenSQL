@@ -1,12 +1,12 @@
 import React from 'react';
-
-import brace from 'brace';
 import AceEditor from 'react-ace';
+import brace from 'brace';
+import 'brace/mode/sql'
+import 'brace/theme/monokai'
 
 import TextPadStore from '../stores/TextPadStore';
 
-import 'brace/mode/sql'
-import 'brace/theme/monokai'
+
 
 function onChange(newValue) {
   console.log('change', newValue)

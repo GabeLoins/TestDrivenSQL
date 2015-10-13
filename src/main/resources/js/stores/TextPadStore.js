@@ -1,10 +1,7 @@
 import alt from '../alt';
-
 import PanelConstants from '../constants/PanelConstants';
-
-import TextPadActions from '../actions/TextPadActions'
-
 import PanelStore from './PanelStore';
+import TextPadActions from '../actions/TextPadActions'
 
 class TextPadStore {
 

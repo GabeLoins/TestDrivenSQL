@@ -1,9 +1,9 @@
 import React from 'react';
 
-import AddPad from './AddPad';
-import TextPad from './TextPad';
 
+import AddPad from './AddPad';
 import PanelStore from '../stores/PanelStore';
+import TextPad from './TextPad';
 import TextPadStore from '../stores/TextPadStore';
 
 class TextPanel extends React.Component {

@@ -1,10 +1,8 @@
 import React from 'react';
 
-import TextPadStore from '../stores/TextPadStore';
-
-import TextPadActions from '../actions/TextPadActions';
-
 import PanelConstants from '../constants/PanelConstants';
+import TextPadActions from '../actions/TextPadActions';
+import TextPadStore from '../stores/TextPadStore';
 
 class AddPad extends React.Component {
 

@@ -1,13 +1,11 @@
 import React from 'react';
 
-import PanelConstants from '../constants/PanelConstants';
-
-import PanelStore from '../stores/PanelStore';
 import PanelActions from '../actions/PanelActions';
-
-import TextPanel from './TextPanel';
-import TestPanel from './TestPanel';
+import PanelConstants from '../constants/PanelConstants';
 import PanelDivider from './PanelDivider';
+import PanelStore from '../stores/PanelStore';
+import TestPanel from './TestPanel';
+import TextPanel from './TextPanel';
 
 class Editor extends React.Component {
 

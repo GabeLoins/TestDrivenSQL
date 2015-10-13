@@ -1,7 +1,7 @@
 import React from 'react';
 
-import FilePanel from './FilePanel';
 import Editor from './Editor';
+import FilePanel from './FilePanel';
 
 class App extends React.Component {
 

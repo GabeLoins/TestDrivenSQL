@@ -1,8 +1,6 @@
 import alt from '../alt';
-
-import PanelConstants from '../constants/PanelConstants';
-
 import PanelActions from '../actions/PanelActions';
+import PanelConstants from '../constants/PanelConstants';
 
 class PanelStore {
 
