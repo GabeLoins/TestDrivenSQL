@@ -47,9 +47,15 @@ gulp.task('js', function() {
   })
       .transform(babelify)
       .bundle()
+      .on('error', onError)
       .pipe(source('bundle.js'))
       .pipe(gulp.dest('public/assets'));
 });
+
+function onError(err) {
+  console.log(err);
+  this.emit('end');
+}
 
 gulp.task('sass', function() {
   gulp.src('src/main/resources/sass/**/*.scss', ['sass'])
