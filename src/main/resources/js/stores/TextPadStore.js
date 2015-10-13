@@ -47,7 +47,8 @@ class TextPadStore {
       location_ = this.state.padOrdering.length;
     }
     const id = this.getNextId();
-    this.state.padWidths[id] = PanelStore.getWidth('text') - 2 * PanelConstants.PAD_WIDTH_PADDING;
+    this.state.padWidths[id] = 
+      PanelStore.getWidth('text') - 2 * PanelConstants.PAD_WIDTH_PADDING;
     this.state.padHeights[id] = PanelConstants.PAD_DEFAULT_HEIGHT;
     this.state.padX[id] = PanelConstants.PAD_WIDTH_PADDING;
     this.state.padY[id] = this.findY(location_);
